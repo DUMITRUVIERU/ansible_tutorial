@@ -12,9 +12,10 @@
   - name: install apche2 pakage
     apt:
       name: apache2
-      state: latest
+      state: absent
 
   - name: add php 
     apt:
-      name: libapache2-mod-php    
+      name: libapache2-mod-php 
+      state: absent   
 
